@@ -6,6 +6,8 @@ The comment box requires Auth0 authentication for users to add new comments. A u
 
 Comments are stored in Serverless Redis ([Upstash](http://upstash.com/)).
 
+* https://vercel.com/templates/next.js/blog-with-comments
+
 ### Demo
 
 [https://blog-with-comment.vercel.app/](https://blog-with-comment.vercel.app/)
@@ -35,6 +37,10 @@ Go to the [Upstash Console](https://console.upstash.com/) and create a new datab
 #### Upstash environment
 
 - `REDIS_URL`: Find the URL in the database details page in Upstash Console clicking on **Redis Connect** button.
+
+- `REDIS_URL`: rediss://:<PASSWORD>@<URL>:<PORT>
+- `UPSTASH_REDIS_REST_URL`: https://<URL>
+- `UPSTASH_REDIS_REST_TOKEN`: <TOKEN>
 
 ## `4` Configuring Auth0
 
