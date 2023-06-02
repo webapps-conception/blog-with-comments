@@ -69,3 +69,16 @@ and [import to Vercel](https://vercel.com/new?utm_source=github&utm_medium=readm
 
 **Important**: When you import your project on Vercel, make sure to click on **Environment Variables** and set them to
 match your `.env.local` file.
+
+## Note Rudy
+### Next 13.3.0 DELETE HTTP method issue
+Edit: issue still persists in 13.4 ( April 6, 2023 - May 6, 2023 )
+
+* https://github.com/vercel/next.js/discussions/48072
+
+Depuis la version 13.3.0 de next, il n'ait plus possible de récupérer des données en body avec la méthode DELETE en utilisant la fonction NextApiRequest.
+
+Solution : installer la version next@13.2.4 :
+```bash
+yarn add next@13.2.4
+```
